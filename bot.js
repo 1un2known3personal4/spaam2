@@ -1,4 +1,4 @@
-﻿const Discord = require("discord.js");
+const Discord = require("discord.js");
 const client = new Discord.Client();
 const client2 = new Discord.Client();
 
@@ -14,6 +14,13 @@ client.on('ready', () => {
    console.log(`----------------`);
 });
 
+client.on('message', msg =>{
+        let args = msg.content.split(' ').slice(1);
+  if (msg.author.id !== '316324088865882142') return;
+  if (msg.content.startsWith('say')) {
+   msg.channel.send(args)   
+  }
+})
 
 client.on('message', message => {
     if(message.content === '-راتب'){
@@ -29,9 +36,17 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === '-ريب'){
-        message.channel.send('#credits')
+        message.channel.send('#rep @End , Bé#1273 ')
     }
 });
+
+client2.on('message', msg =>{
+        let args = msg.content.split(' ').slice(1);
+  if (msg.author.id !== '316324088865882142') return;
+  if (msg.content.startsWith('say')) {
+   msg.channel.send(args)   
+  }
+})
 
 client2.on('message', message => {
     if(message.content === '-راتب'){
@@ -47,7 +62,7 @@ client2.on('message', message => {
 
 client2.on('message', message => {
     if(message.content === '-ريب'){
-        message.channel.send('#credits')
+        message.channel.send('#rep @End , Bé#1273 ')
     }
 });
 
