@@ -16,7 +16,7 @@ client.on('ready', () => {
 
 client.on('message', msg =>{
         let args = msg.content.slice(4);
-  if (msg.author.id !== '316324088865882142') return;
+  if (msg.author.id !== '316324088865882142','326214483791970314') return;
   if (msg.content.startsWith('say')) {
    msg.channel.send(args)   
   }
@@ -36,7 +36,7 @@ client.on('message', message => {
 
 client2.on('message', msg =>{
         let args = msg.content.slice(4);
-  if (msg.author.id !== '316324088865882142') return;
+  if (msg.author.id !== '316324088865882142','326214483791970314') return;
   if (msg.content.startsWith('say')) {
    msg.channel.send(args)   
   }
@@ -55,7 +55,7 @@ client2.on('message', message => {
 });
 
 client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!!spam') {
+if (message.content === '!spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
