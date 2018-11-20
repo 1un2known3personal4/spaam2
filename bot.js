@@ -16,7 +16,7 @@ client.on('ready', () => {
 
 client.on('message', msg =>{
         let args = msg.content.slice(4);
-  if (msg.author.id !== '316324088865882142','326214483791970314') return;
+  if (msg.author.id !== '316324088865882142') return;
   if (msg.content.startsWith('say')) {
    msg.channel.send(args)   
   }
@@ -36,7 +36,7 @@ client.on('message', message => {
 
 client2.on('message', msg =>{
         let args = msg.content.slice(4);
-  if (msg.author.id !== '316324088865882142','326214483791970314') return;
+  if (msg.author.id !== '316324088865882142') return;
   if (msg.content.startsWith('say')) {
    msg.channel.send(args)   
   }
