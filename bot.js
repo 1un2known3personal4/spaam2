@@ -23,20 +23,14 @@ client.on('message', msg =>{
 })
 
 client.on('message', message => {
-    if(message.content === '-راتب'){
+    if(message.content === 'راتب'){
         message.channel.send('#daily')
     }
 });
 
 client.on('message', message => {
-    if(message.content === '-مبلغ'){
+    if(message.content === 'كريدتس'){
         message.channel.send('#credits')
-    }
-});
-
-client.on('message', message => {
-    if(message.content === '-ريب'){
-        message.channel.send('#rep @End , Bé#1273 ')
     }
 });
 
@@ -49,27 +43,19 @@ client2.on('message', msg =>{
 })
 
 client2.on('message', message => {
-    if(message.content === '-راتب'){
+    if(message.content === 'راتب'){
         message.channel.send('#daily')
     }
 });
 
 client2.on('message', message => {
-    if(message.content === '-مبلغ'){
+    if(message.content === 'كريدتس'){
         message.channel.send('#credits')
     }
 });
 
-client2.on('message', message => {
-    if(message.content === '-ريب'){
-        message.channel.send('#rep @End , Bé#1273 ')
-    }
-});
-
-
-
 client.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!spam') {
+if (message.content === '!!spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
